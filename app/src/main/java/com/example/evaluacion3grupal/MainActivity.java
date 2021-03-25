@@ -12,6 +12,13 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+//Javier Aravena
+//Carolina Diaz
+//Pablo Jaramillo
+//Nicolle Salinas
+//Angel Zamorano
+
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView listView;
@@ -33,11 +40,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         listaMain.add(new ModeloMain("Postres", R.drawable.postres));
         listaMain.add(new ModeloMain("Galeria", R.drawable.galeriafotos));
 
+        //creacion adapter para usar layout personalizado y lista con datos.
         adapterJ = new AdapterJ(MainActivity.this,R.layout.layout_principal, listaMain);
         listView.setAdapter(adapterJ);
 
+        //Metodo para ejecutar acciones al hacer Click en items
         listView.setOnItemClickListener(this);
-
     }
 
     @Override

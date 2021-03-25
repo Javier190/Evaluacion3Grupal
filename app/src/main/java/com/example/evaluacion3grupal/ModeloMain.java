@@ -5,6 +5,7 @@ public class ModeloMain {
     private String titulo;
     private int imageID;                             //imagen es un valor tipo numero
 
+    //Constructor
     public ModeloMain(String titulo, int imageID) {
         this.titulo = titulo;
         this.imageID = imageID;

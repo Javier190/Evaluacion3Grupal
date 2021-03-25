@@ -5,6 +5,7 @@ public class Producto {
     private String nombre;
     private String cantidad;
 
+    //Constructor
     public Producto(String codigo, String nombre, String cantidad) {
         this.codigo = codigo;
         this.nombre = nombre;

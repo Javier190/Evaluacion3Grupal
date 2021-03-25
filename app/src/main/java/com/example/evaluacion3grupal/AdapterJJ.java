@@ -13,6 +13,8 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
+
+//Adapter 2do layout personalizado
 public class AdapterJJ extends ArrayAdapter<ModeloMain2> {
 
     private List<ModeloMain2> lista2;

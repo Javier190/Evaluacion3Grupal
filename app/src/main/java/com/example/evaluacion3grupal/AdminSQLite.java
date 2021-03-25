@@ -8,10 +8,11 @@ import android.view.View;
 
 import java.util.ArrayList;
 
+
+//Clase que administra la BD - CRUD
 public class AdminSQLite extends SQLiteOpenHelper {
 
     public AdminSQLite(Context context){super(context, "DB_Evgrupal", null, 1);}
-
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -32,9 +33,9 @@ public class AdminSQLite extends SQLiteOpenHelper {
     }
 
 
-    //*****************CRUD**********// Para los 3 primeros metodos hay que poner writable pq vamos a modificar la data. escribir en ella.
+    //*****************CRUD**********// Para los 3 primeros metodos hay que poner writable.
 
-    //Se agrega al principio y al final el parametros que va como PK
+    //Se agrega al principio y al final el campo que va como PK, en este caso su codigo.
 
     public void modificarDatos(Producto producto){
         SQLiteDatabase db = getWritableDatabase();

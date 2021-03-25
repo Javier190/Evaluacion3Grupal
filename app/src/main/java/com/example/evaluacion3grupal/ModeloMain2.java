@@ -6,6 +6,8 @@ public class ModeloMain2 {
     private String nombrePersona;
     private int imagenflecha;
 
+    //Constructor
+
     public ModeloMain2(int imagenPersona, String titulo, int imagenflecha) {
         this.imagenPersona = imagenPersona;
         this.nombrePersona = titulo;
