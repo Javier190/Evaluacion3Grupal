@@ -48,7 +48,7 @@ public class MainActivity2 extends AppCompatActivity implements AdapterView.OnIt
         switch (position) {
 
             case 0:
-                Toast.makeText(this, "Redirigiendo hacia " + listamodelo2.get(position).getNombrePersona(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Redirigiendo hacia.. " + listamodelo2.get(position).getNombrePersona(), Toast.LENGTH_SHORT).show();
                 Intent intent0 = new Intent(MainActivity2.this, MainActivity4.class);
                 intent0.putExtra("position", listamodelo2.get(position).getNombrePersona());
                 startActivity(intent0);
