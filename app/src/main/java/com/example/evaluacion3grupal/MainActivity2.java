@@ -35,11 +35,10 @@ public class MainActivity2 extends AppCompatActivity implements AdapterView.OnIt
         listamodelo2.add(new ModeloMain2(R.drawable.user3, "Bruce Wayne", R.drawable.arrow2));
         listamodelo2.add(new ModeloMain2(R.drawable.user4, "Diana Prince", R.drawable.arrow2));
 
-        adapterJJ = new AdapterJJ(this, R.layout.layout_principal, listamodelo2);
+        adapterJJ = new AdapterJJ(MainActivity2.this, R.layout.layout_secundario, listamodelo2);
         listview2.setAdapter(adapterJJ);
 
         listview2.setOnItemClickListener(MainActivity2.this);
-
     }
 
     //Aca estamos pasando a la activity detalle de cada empleado y usamos un intent para pasar el nombre de una activity a otra a traves del putextra
@@ -53,30 +52,30 @@ public class MainActivity2 extends AppCompatActivity implements AdapterView.OnIt
                 Intent intent0 = new Intent(MainActivity2.this, MainActivity4.class);
                 intent0.putExtra("position", listamodelo2.get(position).getNombrePersona());
                 startActivity(intent0);
+                break;
 
             case 1:
                 Toast.makeText(this, "Redirigiendo hacia " + listamodelo2.get(position).getNombrePersona(), Toast.LENGTH_SHORT).show();
                 Intent intent1 = new Intent(MainActivity2.this, MainActivity3.class);
                 intent1.putExtra("position", listamodelo2.get(position).getNombrePersona());
                 startActivity(intent1);
-
+                break;
             case 2:
                 Toast.makeText(this, "Perfil en Construccion.. " + listamodelo2.get(position).getNombrePersona(), Toast.LENGTH_SHORT).show();
+                break;
 
             case 3:
                 Toast.makeText(this, "Perfil en Construccion.. " + listamodelo2.get(position).getNombrePersona(), Toast.LENGTH_SHORT).show();
+                break;
             case 4:
                 Toast.makeText(this, "Perfil en Construccion.. " + listamodelo2.get(position).getNombrePersona(), Toast.LENGTH_SHORT).show();
+                break;
             case 5:
                 Toast.makeText(this, "Perfil en Construccion.. " + listamodelo2.get(position).getNombrePersona(), Toast.LENGTH_SHORT).show();
+                break;
             case 6:
                 Toast.makeText(this, "Perfil en Construccion.. " + listamodelo2.get(position).getNombrePersona(), Toast.LENGTH_SHORT).show();
-            case 7:
-                Toast.makeText(this, "Perfil en Construccion.. " + listamodelo2.get(position).getNombrePersona(), Toast.LENGTH_SHORT).show();
-            case 8:
-                Toast.makeText(this, "Perfil en Construccion.. " + listamodelo2.get(position).getNombrePersona(), Toast.LENGTH_SHORT).show();
-            case 9:
-                Toast.makeText(this, "Perfil en Construccion.. " + listamodelo2.get(position).getNombrePersona(), Toast.LENGTH_SHORT).show();
+                break;
         }
 
     }

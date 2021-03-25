@@ -29,6 +29,7 @@ public class AdapterJ extends ArrayAdapter<ModeloMain> {
     }
 
     //retorna vista inflada de cada elemento que viene de cada row en el listview
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

@@ -12,11 +12,11 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-//Javier Aravena
+/*Javier Aravena
 //Carolina Diaz
 //Pablo Jaramillo
 //Nicolle Salinas
-//Angel Zamorano
+//Angel Zamorano*/
 
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         listView.setAdapter(adapterJ);
 
         //Metodo para ejecutar acciones al hacer Click en items
-        listView.setOnItemClickListener(this);
+        listView.setOnItemClickListener(MainActivity.this);
     }
 
     @Override
@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 1:
                 Toast.makeText(this,"Boton apretado en posicion " + position, Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent(this, MainActivity2.class);
-                startActivity(intent2);
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
                 break;
             case 2:
                 Toast.makeText(this,"En construccion.. ", Toast.LENGTH_SHORT).show();

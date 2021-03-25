@@ -38,6 +38,7 @@ public class Consultas extends AppCompatActivity {
     public void limpiar(View view) {
         et1.setText(null);
         et2.setText(null);
+        et3.setText(null);
     }
 
     public void insertar(View view) {
